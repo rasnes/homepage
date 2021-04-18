@@ -1,5 +1,5 @@
 ---
-title: "About this blog"
+title: "About"
 description: |
   Some additional details about the blog
 ---
@@ -7,3 +7,7 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Hi, I am Rasmus Nes, a data scientist situated in Oslo, Norway. I made this homepage for making it easy to occasionally share some thoughts or experiences from my work or side projects.
+
+The page is made with [Distill for R Markdown](https://rstudio.github.io/distill/) and hosted on [Firebase Hosting](https://firebase.google.com/docs/hosting/).
