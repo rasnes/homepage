@@ -2,11 +2,11 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
+      "title": "About",
       "description": "Some additional details about the blog",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-04-18T19:05:14+02:00"
+      "contents": "\nHi, I am Rasmus Nes, a data scientist situated in Oslo, Norway. I made this homepage for making it easy to occasionally share some thoughts or experiences from my work or side projects.\nThe page is made with Distill for R Markdown and hosted on Firebase Hosting.\n\n\n\n",
+      "last_modified": "2021-04-18T19:40:25+02:00"
     },
     {
       "path": "index.html",
