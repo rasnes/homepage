@@ -1,0 +1,12 @@
+name: "homepage"
+title: "Rasmus Nes"
+description: |
+  Rasmus Nes
+output_dir: "public"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
