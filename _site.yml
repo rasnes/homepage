@@ -2,7 +2,7 @@ name: "homepage"
 title: "Rasmus Nes"
 description: |
   Rasmus Nes
-output_dir: "public"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
