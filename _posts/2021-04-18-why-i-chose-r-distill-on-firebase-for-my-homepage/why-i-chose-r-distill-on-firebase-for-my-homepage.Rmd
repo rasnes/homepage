@@ -1,7 +1,7 @@
 ---
 title: "Why I chose R Distill on Firebase for my homepage"
 description: |
-  A short description of the post.
+  Briefly on why I chose to use `R distill` and host it on Firebase Hosting
 author:
   - name: Nes, Rasmus
     url: {}

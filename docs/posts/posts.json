@@ -19,7 +19,7 @@
   {
     "path": "posts/2021-04-18-why-i-chose-r-distill-on-firebase-for-my-homepage/",
     "title": "Why I chose R Distill on Firebase for my homepage",
-    "description": "A short description of the post.",
+    "description": "Briefly on why I chose to use `R distill` and host it on Firebase Hosting",
     "author": [
       {
         "name": "Nes, Rasmus",
@@ -30,7 +30,7 @@
     "categories": [],
     "contents": "\nI thought I might briefly share why I’ve chosen Distill for R Markdown as the “framework” for my homepage, and why I prefer to host it on on Firebase Hosting.\nWhy Distill for R Markdown\nMost importantly, it is really easy to set up and deploy (kudos to the RStudio team). After having made an RStudio project of a Distill blog, it is very easy to add blog posts from within RStudio and then push to Github (more on Github integration with Firebase below).\nThomas Mock’s summary on Pros and Cons of R distill sums it up nicely:\nNo Hugo or other build dependencies. If I want to add a new blog post, I simply write a new distill R Markdown document and compile/Knit it to static HTML. This as little overhead as I can imagine.\nNo version dependencies. I am not sure I’ll blog very often, but when I do I want it to be hassle-free; I want to focus all my time and effort on making the blog post, not getting the blog to work. Even though, say, my next blog post will be in two years time, I could confidently update all my R packages and be sure that as long as my blog post compiles to HTML it can easily be added to my blog. This is in contrast to frameworks like Hugo, where you’d risk running into compatibility issues and you’d need to occasionally update your Hugo version etc. (with the risk of screwing things up since I’ve long since forgotten how to set up this damn blog.)\ndistill::import_post()\nStatic HTML page\nand then either push it to my repo or to some other repo from which I can use the distill::import_post()\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-04-18T20:31:15+02:00",
+    "last_modified": "2021-04-18T20:36:40+02:00",
     "input_file": "why-i-chose-r-distill-on-firebase-for-my-homepage.utf8.md"
   }
 ]
