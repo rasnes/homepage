@@ -88,7 +88,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>Rasmus Nes: Why I chose R Distill on Firebase for my homepage</title>
 
-<meta property="description" itemprop="description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting"/>
+<meta property="description" itemprop="description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting."/>
 
 
 <!--  https://schema.org/Article -->
@@ -99,20 +99,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Rasmus Nes: Why I chose R Distill on Firebase for my homepage"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting"/>
+<meta property="og:description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Rasmus Nes"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Rasmus Nes: Why I chose R Distill on Firebase for my homepage"/>
-<meta property="twitter:description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting"/>
+<meta property="twitter:description" content="Briefly on why I chose to use `R distill` and host it on Firebase Hosting."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Why I chose R Distill on Firebase for my homepage"]},{"type":"character","attributes":{},"value":["Briefly on why I chose to use `R distill` and host it on Firebase Hosting"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Nes, Rasmus"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-18-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Why I chose R Distill on Firebase for my homepage"]},{"type":"character","attributes":{},"value":["Briefly on why I chose to use `R distill` and host it on Firebase Hosting."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Nes, Rasmus"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-18-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2061,7 +2061,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Why I chose R Distill on Firebase for my homepage","description":"Briefly on why I chose to use `R distill` and host it on Firebase Hosting","authors":[{"author":"Nes, Rasmus","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-04-18T00:00:00.000+00:00","citationText":"Rasmus, 2021"}
+{"title":"Why I chose R Distill on Firebase for my homepage","description":"Briefly on why I chose to use `R distill` and host it on Firebase Hosting.","authors":[{"author":"Nes, Rasmus","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-04-18T00:00:00.000+00:00","citationText":"Rasmus, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2087,7 +2087,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1>Why I chose R Distill on Firebase for my homepage</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Briefly on why I chose to use <code>R distill</code> and host it on Firebase Hosting</p></p>
+<p><p>Briefly on why I chose to use <code>R distill</code> and host it on Firebase Hosting.</p></p>
 </div>
 
 <div class="d-byline">
@@ -2097,17 +2097,32 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#why-distill-for-r-markdown">Why Distill for <code>R</code> Markdown</a><ul>
+<li><a href="#what-about-python">What about Python?</a></li>
+</ul></li>
+<li><a href="#why-firebase">Why Firebase</a></li>
+</ul>
+</nav>
+</div>
 <p>I thought I might briefly share why I’ve chosen <a href="https://rstudio.github.io/distill/">Distill for R Markdown</a> as the “framework” for my homepage, and why I prefer to host it on on <a href="https://firebase.google.com/docs/hosting/">Firebase Hosting</a>.</p>
 <h2 id="why-distill-for-r-markdown">Why Distill for <code>R</code> Markdown</h2>
-<p>Most importantly, it is <em>really</em> easy to set up and deploy (kudos to the RStudio team). After having made an RStudio project of a <a href="https://rstudio.github.io/distill/blog.html">Distill blog</a>, it is very easy to add blog posts from within RStudio and then push to Github (more on Github integration with Firebase below).</p>
-<p><a href="https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/#why-consider-distill">Thomas Mock’s summary on Pros and Cons of <code>R distill</code></a> sums it up nicely:</p>
+<p>Perhaps most importantly, it is <em>really</em> easy to set up and deploy (kudos to the RStudio team 👏). After having made an RStudio project of a <a href="https://rstudio.github.io/distill/blog.html">Distill blog</a>, it is very easy to add blog posts from within RStudio and then push to Github (more on Github integration with Firebase below).</p>
+<p><a href="https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/#why-consider-distill">Thomas Mock’s summary on Pros and Cons of <code>R distill</code></a> sums it up nicely. Here is my “personal” list on essentially the same:</p>
 <ul>
-<li><p><strong>No Hugo or other build dependencies.</strong> If I want to add a new blog post, I simply write a new distill R Markdown document and compile/Knit it to static HTML. This as little overhead as I can imagine.</p></li>
-<li><p><strong>No version dependencies.</strong> I am not sure I’ll blog very often, but when I do I want it to be hassle-free; I want to focus all my time and effort on making the blog post, not getting the blog to work. Even though, say, my next blog post will be in two years time, I could confidently update all my <code>R</code> packages and be sure that as long as my blog post compiles to HTML it can easily be added to my blog. This is in contrast to frameworks like Hugo, where you’d risk running into compatibility issues and you’d need to occasionally update your Hugo version etc. (with the risk of screwing things up since I’ve long since forgotten how to set up this damn blog.)</p></li>
-<li><p><strong><code>distill::import_post()</code></strong></p></li>
-<li><p>Static HTML page</p></li>
+<li><strong>No Hugo or other build dependencies.</strong> If I want to add a new blog post, I simply write a new distill R Markdown document and compile/Knit it to static HTML, then push to Github. No framework build step or anything. This as little overhead as I can imagine.</li>
+<li><strong>No version dependencies.</strong> I am not sure I’ll blog very often, but when I do I want it to be hassle-free; I want to focus all my time and effort on making the blog post, not getting the blog to work. Even though, say, my next blog post might be in two years time, I could confidently update all my <code>R</code> packages and be sure that as long as my blog post compiles to HTML it can easily be added to my blog. This is in contrast to frameworks like Hugo, where you’d risk running into compatibility issues and you’d need to occasionally update your Hugo version (with the risk of screwing things up since I’ve long forgotten how to set up this damn blog.)</li>
+<li><strong><code>distill::import_post()</code></strong> Some times I think it would make more sense to write the blog post in the repo of <em>the project</em> that I’ve been working on rather than the workflow of 1. create project and 2. create blog post about it in <em>this</em> <code>homepage</code> RStudio project. <code>import_post()</code> easily enables this.</li>
 </ul>
-<p>and then either push it to <a href="https://github.com/rasnes/homepage">my repo</a> or to some other repo from which I can use the <code>distill::import_post()</code></p>
+<p>And, of course, I really like to work with R Markdown in RStudio for creating reports/blog posts, and <code>Distill articles</code> seems to be a sort of an enhanced version of “vanilla” R Markdown (I especially like the nice code folding and easy control of width of tables and figures).</p>
+<h3 id="what-about-python">What about Python?</h3>
+<p>A current learning goal is to get more familiar with deep learning frameworks like Tensorflow and PyTorch, so I am likely to spend more time in Python than in R on my side projects. I haven’t panned out exactly how I could easily integrate my work in Python on this blog, but I am pretty sure I will figure something out. There’s the excellent <a href="https://rstudio.github.io/reticulate/"><code>reticulate</code></a> package which certainly could be suitable in some cases. However, I think that if I spend most of my time working in Jupyter Notebook/Colab, I am hoping a can find a way to embed such notebooks in my blog posts rather than “rewriting” them with <code>reticulate</code>. I am sure I will figure something out :)</p>
+<h2 id="why-firebase">Why Firebase</h2>
+<p>The primary reason for chosing Firebase over Github pages, Netlify etc. is the simple integration with <a href="https://firebase.google.com/docs/functions">Cloud Functions</a>. I am very fond of Google Cloud Platform’s <a href="https://cloud.google.com/run">Cloud Run</a>, which I would use to host the dashboard apps or APIs for my side projects.</p>
+<p>Firebase has nice <a href="https://firebase.google.com/docs/hosting/github-integration">Github integration</a>, which enables one to work on blog post drafts in git branches. In addition, It could be fun to try out some of the <a href="https://firebase.google.com/docs/ml">Firebase ML</a> integration with Google Cloud ML services.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

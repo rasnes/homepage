@@ -1,7 +1,7 @@
 ---
 title: "Why I chose R Distill on Firebase for my homepage"
 description: |
-  Briefly on why I chose to use `R distill` and host it on Firebase Hosting
+  Briefly on why I chose to use `R distill` and host it on Firebase Hosting.
 author:
   - name: Nes, Rasmus
     url: {}
@@ -9,6 +9,7 @@ date: 04-18-2021
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
 ---
 
 
@@ -20,30 +21,25 @@ I thought I might briefly share why I've chosen [Distill for R Markdown](https:/
 
 ## Why Distill for `R` Markdown
 
-Most importantly, it is _really_ easy to set up and deploy (kudos to the RStudio team). After having made an RStudio project of a [Distill blog](https://rstudio.github.io/distill/blog.html), it is very easy to add blog posts from within RStudio and then push to Github (more on Github integration with Firebase below).
+Perhaps most importantly, it is _really_ easy to set up and deploy (kudos to the RStudio team 👏). After having made an RStudio project of a [Distill blog](https://rstudio.github.io/distill/blog.html), it is very easy to add blog posts from within RStudio and then push to Github (more on Github integration with Firebase below).
 
-[Thomas Mock's summary on Pros and Cons of `R distill`](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/#why-consider-distill) sums it up nicely:
+[Thomas Mock's summary on Pros and Cons of `R distill`](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/#why-consider-distill) sums it up nicely. Here is my "personal" list on essentially the same:
 
-- **No Hugo or other build dependencies.** If I want to add a new blog post, I simply write a new distill R Markdown document and compile/Knit it to static HTML. This as little overhead as I can imagine. 
-- **No version dependencies.** I am not sure I'll blog very often, but when I do I want it to be hassle-free; I want to focus all my time and effort on making the blog post, not getting the blog to work. Even though, say, my next blog post will be in two years time, I could confidently update all my `R` packages and be sure that as long as my blog post compiles to HTML it can easily be added to my blog. This is in contrast to frameworks like Hugo, where you'd risk running into compatibility issues and you'd need to occasionally update your Hugo version etc. (with the risk of screwing things up since I've long since forgotten how to set up this damn blog.)
-- **`distill::import_post()`**
+- **No Hugo or other build dependencies.** If I want to add a new blog post, I simply write a new distill R Markdown document and compile/Knit it to static HTML, then push to Github. No framework build step or anything. This as little overhead as I can imagine. 
+- **No version dependencies.** I am not sure I'll blog very often, but when I do I want it to be hassle-free; I want to focus all my time and effort on making the blog post, not getting the blog to work. Even though, say, my next blog post might be in two years time, I could confidently update all my `R` packages and be sure that as long as my blog post compiles to HTML it can easily be added to my blog. This is in contrast to frameworks like Hugo, where you'd risk running into compatibility issues and you'd need to occasionally update your Hugo version (with the risk of screwing things up since I've long forgotten how to set up this damn blog.)
+- **`distill::import_post()`** Some times I think it would make more sense to write the blog post in the repo of _the project_ that I've been working on rather than the workflow of 1. create project and 2. create blog post about it in _this_ `homepage` RStudio project. `import_post()` easily enables this.
 
+And, of course, I really like to work with R Markdown in RStudio for creating reports/blog posts, and `Distill articles` seems to be a sort of an enhanced version of "vanilla" R Markdown (I especially like the nice code folding and easy control of width of tables and figures).
 
-- Static HTML page
+### What about Python?
 
+A current learning goal is to get more familiar with deep learning frameworks like Tensorflow and PyTorch, so I am likely to spend more time in Python than in R on my side projects. I haven't panned out exactly how I could easily integrate my work in Python on this blog, but I am pretty sure I will figure something out. There's the excellent [`reticulate`](https://rstudio.github.io/reticulate/) package which certainly could be suitable in some cases. However, I think that if I spend most of my time working in Jupyter Notebook/Colab, I am hoping a can find a way to embed such notebooks in my blog posts rather than "rewriting" them with `reticulate`. I am sure I will figure something out :)
 
-and then either push it to [my repo](https://github.com/rasnes/homepage) or to some other repo from which I can use the `distill::import_post()`
+## Why Firebase
 
+The primary reason for chosing Firebase over Github pages, Netlify etc. is the simple integration with [Cloud Functions](https://firebase.google.com/docs/functions). I am very fond of Google Cloud Platform's [Cloud Run](https://cloud.google.com/run), which I would use to host the dashboard apps or APIs for my side projects.
 
-
-
-
-
-
-
-
-
-
+Firebase has nice [Github integration](https://firebase.google.com/docs/hosting/github-integration), which enables one to work on blog post drafts in git branches. In addition, It could be fun to try out some of the [Firebase ML](https://firebase.google.com/docs/ml) integration with Google Cloud ML services.
 
 
 
