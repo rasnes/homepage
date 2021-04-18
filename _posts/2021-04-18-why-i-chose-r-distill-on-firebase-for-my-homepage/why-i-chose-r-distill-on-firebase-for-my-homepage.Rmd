@@ -33,7 +33,7 @@ And, of course, I really like to work with R Markdown in RStudio for creating re
 
 ### What about Python?
 
-A current learning goal is to get more familiar with deep learning frameworks like Tensorflow and PyTorch, so I am likely to spend more time in Python than in R on my side projects. I haven't panned out exactly how I could easily integrate my work in Python on this blog, but I am pretty sure I will figure something out. There's the excellent [`reticulate`](https://rstudio.github.io/reticulate/) package which certainly could be suitable in some cases. However, I think that if I spend most of my time working in Jupyter Notebook/Colab, I am hoping a can find a way to embed such notebooks in my blog posts rather than "rewriting" them with `reticulate`. I am sure I will figure something out :)
+A current learning goal is to get more familiar with deep learning frameworks like Tensorflow and PyTorch, so I am likely to spend more time in Python than in R on my side projects. I haven't panned out exactly how I could easily integrate my work in Python on this blog, but I am pretty sure I will figure something out. There's the excellent [`reticulate`](https://rstudio.github.io/reticulate/) package which certainly could be suitable in some cases. However, I think that if I spend most of my time working in Jupyter Notebook/Colab, I am hoping a can find a way to embed such notebooks in my blog posts rather than "rewriting" them with `reticulate`. Update: it doesn't look that easy. I tried to convert a Jupyter Notebook to markdown, and then embed that in a blog post, and it didn't look good at at all. I guess I'll rather just link to the notebooks on Github in the blogposts then.
 
 ## Why Firebase
 
