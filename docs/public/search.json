@@ -6,8 +6,15 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-04-18T18:36:30+02:00"
+      "last_modified": "2021-04-18T19:18:58+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Rasmus Nes",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-04-18T19:19:49+02:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }
