@@ -3,6 +3,7 @@ title: "Rasmus Nes"
 description: |
   Rasmus Nes
 output_dir: "docs"
+theme: rasmus-nes-theme.css
 navbar:
   right:
     - text: "Home"
