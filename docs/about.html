@@ -2120,6 +2120,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
   @import url('https://fonts.googleapis.com/css2?family=DM+Mono');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Mono');
   
   
   html {
@@ -2184,7 +2185,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
-  </style>
+  /* CODE FORMAT */
+  
+  :not(pre) > code {
+    font-family: monospace;
+    background: #F7F7F8; 
+    padding: 0.1em 0.5ex;
+    border-radius: 5px;
+  }</style>
   <style type="text/css">
   /* base style */
   

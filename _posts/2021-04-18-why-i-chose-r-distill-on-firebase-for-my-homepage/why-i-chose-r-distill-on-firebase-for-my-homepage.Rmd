@@ -10,6 +10,7 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
+    highlight: "default"
 ---
 
 
@@ -40,6 +41,12 @@ A current learning goal is to get more familiar with deep learning frameworks li
 The primary reason for chosing Firebase over Github pages, Netlify etc. is the simple integration with [Cloud Functions](https://firebase.google.com/docs/functions). I am very fond of Google Cloud Platform's [Cloud Run](https://cloud.google.com/run), which I would use to host the dashboard apps or APIs for my side projects.
 
 Firebase has nice [Github integration](https://firebase.google.com/docs/hosting/github-integration), which enables one to work on blog post drafts in git branches. In addition, It could be fun to try out some of the [Firebase ML](https://firebase.google.com/docs/ml) integration with Google Cloud ML services.
+
+
+
+
+
+
 
 
 
